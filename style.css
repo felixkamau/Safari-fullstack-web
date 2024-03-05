@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar {
+    width: 85%;
+    margin: auto ;
+    /* padding: 35px 0; */
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* .nav-bar ul li::after{
+    content: '';
+    height:  3px;
+    width: 0;
+    background: 009688;
+    position: absolute;
+    left: 0;
+    bottom: -0px;
+} */
+
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover::after{
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+} 
+
+/* ------------------------- ABOUT PAGE STYLING ---------------------------------------*/
+.banner-about {
+    width: 50%;
+    height: 100vh;
+    background-repeat: none;
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.74),rgba(0,0,0,0.74)),url(images/about.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative; /* Added position: relative; to make absolute positioning relative to this element */
+}
+
+.about-txt{
+    position: absolute;
+    margin: 3rem auto;
+    top: -5%;
+    right: -90%;
+    background-image: url('images/mara.jpg');
+    background-size: cover;
+    background-position: center; 
+    width: 70%;
+    height: 250px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: #fff;
+}
+.tour-van {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.tour-van p{
+    text-align: justify;
+    overflow: hidden;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.banner-about h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff; /* Added color to make h1 visible against the background */
+}
+
+/* .about-content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+} */
+
+/* .about-content p{
+    justify-items: center;
+} */
+
+.about-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.about-content p{
+    justify-content: center;
+}
+
+/* ------------------------- END OF ABOUT PAGE STYLING ---------------------------------------*/
+
+/* .content-home {
+
+} */
+
+.content-home h1{
+    margin-top: 10px;
+}
+
+.location-box, .hotel-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.location-item, .hotel-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.location-item img, .hotel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.location-item h2, .hotel-item h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
